@@ -26,7 +26,7 @@ public class Administrator implements Serializable {
 
     private Date modifyTime;
 
-    private Date loginTime;
+    private Date lastLoginTime;
 
     private Integer countOfLogin;
 
@@ -39,6 +39,10 @@ public class Administrator implements Serializable {
     private Long departmentId;
 
     private Long areaId;
+
+    private String siteIdSet;
+
+    private Long siteId;
 
     private static final long serialVersionUID = 1L;
 
@@ -130,12 +134,12 @@ public class Administrator implements Serializable {
         this.modifyTime = modifyTime;
     }
 
-    public Date getLoginTime() {
-        return loginTime;
+    public Date getLastLoginTime() {
+        return lastLoginTime;
     }
 
-    public void setLoginTime(Date loginTime) {
-        this.loginTime = loginTime;
+    public void setLastLoginTime(Date lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
     }
 
     public Integer getCountOfLogin() {
@@ -186,6 +190,22 @@ public class Administrator implements Serializable {
         this.areaId = areaId;
     }
 
+    public String getSiteIdSet() {
+        return siteIdSet;
+    }
+
+    public void setSiteIdSet(String siteIdSet) {
+        this.siteIdSet = siteIdSet;
+    }
+
+    public Long getSiteId() {
+        return siteId;
+    }
+
+    public void setSiteId(Long siteId) {
+        this.siteId = siteId;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -203,13 +223,15 @@ public class Administrator implements Serializable {
         sb.append(", note=").append(note);
         sb.append(", createTime=").append(createTime);
         sb.append(", modifyTime=").append(modifyTime);
-        sb.append(", loginTime=").append(loginTime);
+        sb.append(", lastLoginTime=").append(lastLoginTime);
         sb.append(", countOfLogin=").append(countOfLogin);
         sb.append(", countOfFailedLogin=").append(countOfFailedLogin);
         sb.append(", creatorName=").append(creatorName);
         sb.append(", lockedOut=").append(lockedOut);
         sb.append(", departmentId=").append(departmentId);
         sb.append(", areaId=").append(areaId);
+        sb.append(", siteIdSet=").append(siteIdSet);
+        sb.append(", siteId=").append(siteId);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

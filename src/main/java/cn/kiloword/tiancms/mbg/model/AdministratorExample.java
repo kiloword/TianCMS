@@ -845,63 +845,63 @@ public class AdministratorExample {
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeIsNull() {
-            addCriterion("login_time is null");
+        public Criteria andLastLoginTimeIsNull() {
+            addCriterion("last_login_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeIsNotNull() {
-            addCriterion("login_time is not null");
+        public Criteria andLastLoginTimeIsNotNull() {
+            addCriterion("last_login_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeEqualTo(Date value) {
-            addCriterion("login_time =", value, "loginTime");
+        public Criteria andLastLoginTimeEqualTo(Date value) {
+            addCriterion("last_login_time =", value, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeNotEqualTo(Date value) {
-            addCriterion("login_time <>", value, "loginTime");
+        public Criteria andLastLoginTimeNotEqualTo(Date value) {
+            addCriterion("last_login_time <>", value, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeGreaterThan(Date value) {
-            addCriterion("login_time >", value, "loginTime");
+        public Criteria andLastLoginTimeGreaterThan(Date value) {
+            addCriterion("last_login_time >", value, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeGreaterThanOrEqualTo(Date value) {
-            addCriterion("login_time >=", value, "loginTime");
+        public Criteria andLastLoginTimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("last_login_time >=", value, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeLessThan(Date value) {
-            addCriterion("login_time <", value, "loginTime");
+        public Criteria andLastLoginTimeLessThan(Date value) {
+            addCriterion("last_login_time <", value, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeLessThanOrEqualTo(Date value) {
-            addCriterion("login_time <=", value, "loginTime");
+        public Criteria andLastLoginTimeLessThanOrEqualTo(Date value) {
+            addCriterion("last_login_time <=", value, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeIn(List<Date> values) {
-            addCriterion("login_time in", values, "loginTime");
+        public Criteria andLastLoginTimeIn(List<Date> values) {
+            addCriterion("last_login_time in", values, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeNotIn(List<Date> values) {
-            addCriterion("login_time not in", values, "loginTime");
+        public Criteria andLastLoginTimeNotIn(List<Date> values) {
+            addCriterion("last_login_time not in", values, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeBetween(Date value1, Date value2) {
-            addCriterion("login_time between", value1, value2, "loginTime");
+        public Criteria andLastLoginTimeBetween(Date value1, Date value2) {
+            addCriterion("last_login_time between", value1, value2, "lastLoginTime");
             return (Criteria) this;
         }
 
-        public Criteria andLoginTimeNotBetween(Date value1, Date value2) {
-            addCriterion("login_time not between", value1, value2, "loginTime");
+        public Criteria andLastLoginTimeNotBetween(Date value1, Date value2) {
+            addCriterion("last_login_time not between", value1, value2, "lastLoginTime");
             return (Criteria) this;
         }
 
@@ -1272,6 +1272,136 @@ public class AdministratorExample {
 
         public Criteria andAreaIdNotBetween(Long value1, Long value2) {
             addCriterion("area_id not between", value1, value2, "areaId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetIsNull() {
+            addCriterion("site_id_set is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetIsNotNull() {
+            addCriterion("site_id_set is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetEqualTo(String value) {
+            addCriterion("site_id_set =", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetNotEqualTo(String value) {
+            addCriterion("site_id_set <>", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetGreaterThan(String value) {
+            addCriterion("site_id_set >", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetGreaterThanOrEqualTo(String value) {
+            addCriterion("site_id_set >=", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetLessThan(String value) {
+            addCriterion("site_id_set <", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetLessThanOrEqualTo(String value) {
+            addCriterion("site_id_set <=", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetLike(String value) {
+            addCriterion("site_id_set like", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetNotLike(String value) {
+            addCriterion("site_id_set not like", value, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetIn(List<String> values) {
+            addCriterion("site_id_set in", values, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetNotIn(List<String> values) {
+            addCriterion("site_id_set not in", values, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetBetween(String value1, String value2) {
+            addCriterion("site_id_set between", value1, value2, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdSetNotBetween(String value1, String value2) {
+            addCriterion("site_id_set not between", value1, value2, "siteIdSet");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdIsNull() {
+            addCriterion("site_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdIsNotNull() {
+            addCriterion("site_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdEqualTo(Long value) {
+            addCriterion("site_id =", value, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdNotEqualTo(Long value) {
+            addCriterion("site_id <>", value, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdGreaterThan(Long value) {
+            addCriterion("site_id >", value, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("site_id >=", value, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdLessThan(Long value) {
+            addCriterion("site_id <", value, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdLessThanOrEqualTo(Long value) {
+            addCriterion("site_id <=", value, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdIn(List<Long> values) {
+            addCriterion("site_id in", values, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdNotIn(List<Long> values) {
+            addCriterion("site_id not in", values, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdBetween(Long value1, Long value2) {
+            addCriterion("site_id between", value1, value2, "siteId");
+            return (Criteria) this;
+        }
+
+        public Criteria andSiteIdNotBetween(Long value1, Long value2) {
+            addCriterion("site_id not between", value1, value2, "siteId");
             return (Criteria) this;
         }
     }

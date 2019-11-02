@@ -34,5 +34,6 @@ public class Generator {
 		for (String warning : warnings) {
 			System.out.println(warning);
 		}
+		System.exit(0);
 	}
 }
